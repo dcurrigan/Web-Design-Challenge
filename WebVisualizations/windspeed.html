@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>WeatherPy</title>
+  <link href="https://fonts.googleapis.com/css?family=Crete+Round:300,400" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+
+    <!-- NAV BAR -->
+    <nav class="navbar navbar-expand-lg navbar-light py-3 bg-light">
+    
+        <!-- Latitude title element with globe icon  -->
+        <a class="navbar-brand shadow-sm"  href="index.html">
+            <img src="assets/globe.svg"         
+                alt="" 
+                width="32" height="32"
+            >
+            LATITUDE
+        </a>
+        
+        <!-- Collapsible toggler for small screens -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+            
+                <!-- The plots drop down list -->
+                <li class="nav-item dropdown">
+                    
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="assets/bar-chart-line.svg"         
+                         alt="" 
+                         width="24" height="24">                    
+                        Plots
+                    </a>
+                    <!-- Drop down list options -->
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="temperature.html">Latitude and Temperature</a>
+                        <a class="dropdown-item" href="humidity.html">Latitude and Humidity</a>
+                        <a class="dropdown-item" href="cloudiness.html">Latitude and Cloudiness</a>
+                        <a class="dropdown-item" href="windspeed.html">Latitude and Windspeed</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="temp_heatmap.html">Temperature Heatmap</a>
+                        <a class="dropdown-item" href="humidity_heatmap.html">Humidity Heatmap</a>
+                        <a class="dropdown-item" href="cloudiness_heatmap.html">Cloudiness Heatmap</a>
+                        <a class="dropdown-item" href="windspeed_heatmap.html">Windspeed Heatmap</a>
+                    </div>
+                </li>
+                
+                <!-- Link to comparisons page -->
+                <li class="nav-item">
+                    <a class="nav-link" href="comparisons.html">
+                    <img src="assets/binoculars-fill.svg"         
+                         alt="" 
+                         width="24" height="24">
+                        Comparisons
+                    </a>
+                </li>
+                
+                <!-- Link to Data page -->
+                <li class="nav-item">
+                    <a class="nav-link" href="data.html">
+                    <img src="assets/file-bar-graph-fill.svg"         
+                         alt="" 
+                         width="24" height="24">
+                        Data
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </nav>
+
+
+    <div class="container-fluid">
+
+
+        <div class="row">
+
+
+            <!-- ---------------------------------------------------------        -->
+            <!--   Left gutter column (only present on medium and larger screens) -->
+            <div class="col-1 d-lg-block" id="gutter1"></div>
+            <!-- ---------------------------------------------------------        -->
+
+
+
+            <!-- ---------------------------------------------------------        -->
+            <!--                  Main Landing Page Box                           -->
+            <!-- ---------------------------------------------------------        -->
+            <div class="col-md-4 col-sm-10 shadow-sm align-self-start" id="main_box">
+            
+                <!-- Header text -->
+                <h1 class="font-weight-light text-lg-left mt-4 mb-4">
+                    <strong>Latitude vs Wind Speed</strong>
+                </h1>
+                <hr class="mt-3 mb-5">
+                
+                <!-- Homepage image and link -->
+                <img src="visualizations/wind_scatter.png" 
+                     class="float-md-left shadow" 
+                     alt="Wind Speed vs Latitude Scatter Plot"
+                     id="home_img">
+                                                     
+                <!-- Homepage text -->
+                <p class="main_text text-left">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem consequuntur inventore nulla beatae nobis, eos porro temporibus mollitia facilis dolorum cupiditate sint, nisi deleniti nesciunt a molestias ratione. A, magni? Autem, nostrum pariatur? Ab ipsam vitae obcaecati nulla quasi, temporibus officia
+                </p>
+
+                <img src="visualizations/wind_northern_reg.png" 
+                class="float-md-left shadow" 
+                alt="Wind Speed regression north"
+                id="home_img">
+                
+                <p class="main_text text-left">
+                    voluptatem officia maiores ducimus aspernatur dolorem ea, iusto a minima labore ipsa autem dolor quos repellendus sequi. Doloremque nesciunt numquam ipsum perferendis sapiente doloribus praesentium illo repudiandae libero, laudantium incidunt corporis nihil asperiores quod. Cum optio minima quae sit incidunt
+                    </p>
+                
+                <img src="visualizations/wind_southern_reg.png" 
+                class="float-md-left shadow" 
+                alt="Wind Speed regression south"
+                id="home_img">
+
+
+                
+            </div>
+        
+        
+                       
+            <!-- ---------------------------------------------------------        -->
+            <!-- Middle gutter column (only present on medium and larger screens) -->
+            <!-- ---------------------------------------------------------        -->
+            <div class="col-1 d-lg-block" id="gutter2"></div>
+
+
+            
+            
+            <!-- ---------------------------------------------------------        -->
+            <!--                   Navigation Sidebox                             -->
+            <!-- ---------------------------------------------------------        -->
+            <div class="col-md-3 col-sm-10 align-self-start shadow-sm " id="side_box">
+        
+                <div class="container">
+                        
+                    <div class="row ">
+                                            
+
+                        <div class="col-12">
+                            <h1 class="font-weight-light text-lg-left mt-4 mb-0">
+                                <strong>Visualisations</strong>
+                            </h1>
+                            <hr class="mt-3 mb-5">
+                        </div>
+
+                    
+                        <div class="card col-xl-5 col-lg-10 shadow" style="width: 14rem;">
+                            <img src="visualizations/temp_scatter.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                            <h5 class="card-title">Latitude vs temperature</h5>
+                            <p class="card-text">Do temperatures increase as you approach the equator?</p>
+                            
+                            </div>
+                            <div class="card-footer text-center">
+                                <a href="temperature.html" class="btn btn-primary">View Plot</a>
+                            </div>
+                        </div>
+
+                        <div class="card col-xl-5 col-lg-10 shadow" style="width: 14rem;">
+                            <img src="visualizations/humidity_scatter.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                            <h5 class="card-title">Latitude vs humidity</h5>
+                            <p class="card-text">Does humidity increase as you approach the equator?</p>
+                            </div>
+                            <div class="card-footer text-center">
+                                <a href="humidity.html" class="btn btn-primary">View Plot</a>
+                            </div>
+                        </div>
+
+                        <div class="card col-xl-5 col-lg-10 shadow" style="width: 14rem;">
+                            <img src="visualizations/cloudiness_scatter.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                            <h5 class="card-title">Latitude vs cloudiness</h5>
+                            <p class="card-text">What is the influence of latitude on the % of cloud cover?</p>
+                            </div>
+                            <div class="card-footer text-center">
+                                <a href="cloudiness.html" class="btn btn-primary">View Plot</a>-
+                            </div>
+                        </div>
+
+                        <div class="card col-xl-5 col-lg-10 shadow selected_card" style="width: 14rem;">
+                            <img src="visualizations/wind_scatter.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                            <h5 class="card-title">Latitude vs Wind Speed</h5>
+                            <p class="card-text">Does latitude affect wind speed?</p>
+                            </div>
+                            <div class="card-footer text-center">
+                                <a href="windspeed.html" class="btn btn-primary">View Plot</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                      
+                      <a href="comparisons.html" class="btn btn-primary" id="see_more_button" role="button">See More...</a>
+                    
+                    </div>                  
+            
+                </div>
+            
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+</body>
+</html>
