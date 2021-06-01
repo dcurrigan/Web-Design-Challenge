@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>WeatherPy</title>
+  <link href="https://fonts.googleapis.com/css?family=Crete+Round:300,400" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+
+    <!-- NAV BAR -->
+    <nav class="navbar navbar-expand-lg navbar-light py-3 bg-light">
+    
+        <!-- Latitude title element with globe icon  -->
+        <a class="navbar-brand shadow-sm"  href="index.html">
+            <img src="assets/globe.svg"         
+                alt="" 
+                width="32" height="32"
+            >
+            LATITUDE
+        </a>
+        
+        <!-- Collapsible toggler for small screens -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+            
+                <!-- The plots drop down list -->
+                <li class="nav-item dropdown">
+                    
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="assets/bar-chart-line.svg"         
+                         alt="" 
+                         width="24" height="24">                    
+                        Plots
+                    </a>
+                    <!-- Drop down list options -->
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="temperature.html">Latitude and Temperature</a>
+                        <a class="dropdown-item" href="humidity.html">Latitude and Humidity</a>
+                        <a class="dropdown-item" href="cloudiness.html">Latitude and Cloudiness</a>
+                        <a class="dropdown-item" href="windspeed.html">Latitude and Windspeed</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="temp_heatmap.html">Temperature Heatmap</a>
+                        <a class="dropdown-item" href="humidity_heatmap.html">Humidity Heatmap</a>
+                        <a class="dropdown-item" href="cloudiness_heatmap.html">Cloudiness Heatmap</a>
+                        <a class="dropdown-item" href="windspeed_heatmap.html">Windspeed Heatmap</a>
+                    </div>
+                </li>
+                
+                <!-- Link to comparisons page -->
+                <li class="nav-item">
+                    <a class="nav-link" href="comparisons.html">
+                    <img src="assets/binoculars-fill.svg"         
+                         alt="" 
+                         width="24" height="24">
+                        Comparisons
+                    </a>
+                </li>
+                
+                <!-- Link to Data page -->
+                <li class="nav-item">
+                    <a class="nav-link" href="data.html">
+                    <img src="assets/file-bar-graph-fill.svg"         
+                         alt="" 
+                         width="24" height="24">
+                        Data
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </nav>
+
+
+    <div class="container-fluid">
+
+
+        <div class="row">
+
+            <!-- ---------------------------------------------------------        -->
+            <!--   Left gutter column (only present on medium and larger screens) -->
+            <!-- ---------------------------------------------------------        -->
+            <div class="col-2 d-lg-block" id="gutter1"></div>
+          
+            
+            <!-- ---------------------------------------------------------        -->
+            <!--                   Visualisations Box                             -->
+            <!-- ---------------------------------------------------------        -->
+            <div class="col-md-8 col-sm-10 shadow-sm " id="side_box">
+        
+                <div class="container">
+                        
+                    <div class="row ">
+                                            
+
+                        <div class="col-12">
+                            <h1 class="font-weight-light text-lg-left mt-4 mb-0">
+                                <strong>Visualisations</strong>
+                            </h1>
+                            <br>
+                        </div>
+
+                        <div class="col-12">
+                            <p>
+                                Click on any of the images below to view a more in depth analysis 
+                            </p>
+                            <hr class="mt-3 mb-5">
+                        </div>
+
+                    
+                        <div class="card col-md-5 col-sm-10 shadow compare_cards">
+                            <a class="card-block stretched-link text-decoration-none compare_cards" href="temperature.html">
+                                <img src="visualizations/temp_scatter.png" class="card-img-top" alt="Temperature Scatter">
+                                <div class="card-body">
+                                    <h5 class="card-title">Latitude vs temperature</h5>
+                                    <p class="card-text">Do temperatures increase as you approach the equator?</p>                    
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="card col-md-5 col-sm-10 shadow compare_cards" >
+                            <a class="card-block stretched-link text-decoration-none compare_cards" href="humidity.html">                            
+                                <img src="visualizations/humidity_scatter.png" class="card-img-top" alt="Humidity Scatter">
+                                <div class="card-body">
+                                    <h5 class="card-title">Latitude vs humidity</h5>
+                                    <p class="card-text">Does humidity increase as you approach the equator?</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="card col-md-5 col-sm-10 shadow compare_cards" >
+                            <a class="card-block stretched-link text-decoration-none compare_cards" href="cloudiness.html">
+                                <img src="visualizations/cloudiness_scatter.png" class="card-img-top" alt="Cloudiness Scatter">
+                                <div class="card-body">
+                                    <h5 class="card-title">Latitude vs cloudiness</h5>
+                                    <p class="card-text">What is the influence of latitude on the % of cloud cover?</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="card col-md-5 col-sm-10 shadow" >
+                            <a class="card-block stretched-link text-decoration-none compare_cards" href="windspeed.html">
+                                <img src="visualizations/wind_scatter.png" class="card-img-top" alt="Winsdpeed Scatter">
+                                <div class="card-body">
+                                    <h5 class="card-title">Latitude vs Wind Speed</h5>
+                                    <p class="card-text">Does latitude affect wind speed?</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card col-md-5 col-sm-10 shadow compare_cards">
+                            <a class="card-block stretched-link text-decoration-none compare_cards" href="temperature.html">
+                                <img src="visualizations/world_temps.png" class="card-img-top" alt="Temperature Heatmap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Temperature Heatmap</h5>
+                                    <p class="card-text">Do temperatures increase as you approach the equator?</p>                    
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="card col-md-5 col-sm-10 shadow compare_cards" >
+                            <a class="card-block stretched-link text-decoration-none compare_cards" href="humidity.html">                            
+                                <img src="visualizations/world_humidity.png" class="card-img-top" alt="Humidity Heatmap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Humidity Heatmap</h5>
+                                    <p class="card-text">Does humidity increase as you approach the equator?</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="card col-md-5 col-sm-10 shadow compare_cards" >
+                            <a class="card-block stretched-link text-decoration-none compare_cards" href="cloudiness.html">
+                                <img src="visualizations/world_cloudiness.png" class="card-img-top" alt="Cloudiness Heatmap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cloudiness Heatmap</h5>
+                                    <p class="card-text">What is the influence of latitude on the % of cloud cover?</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="card col-md-5 col-sm-10 shadow" >
+                            <a class="card-block stretched-link text-decoration-none compare_cards" href="windspeed.html">
+                                <img src="visualizations/world_wind.png" class="card-img-top" alt="Winsdpeed Heatmap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Winsdpeed Heatmap"</h5>
+                                    <p class="card-text">Does latitude affect wind speed?</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+               
+            
+                </div>
+            
+            </div>
+
+
+            <!-- ---------------------------------------------------------        -->
+            <!--   Left gutter column (only present on medium and larger screens) -->
+            <!-- ---------------------------------------------------------        -->
+            <div class="col-2 d-lg-block" id="gutter1"></div>
+        
+        
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+</body>
+</html>
