@@ -52,7 +52,7 @@ Web-Design-Challenge
 |
 |__ assests/                                        # icons used for the website navbar and headers      
 |      |__ .
-           . 
+|           . 
 |
 |__ visualisations/                                 # Image folder for the plots
 |      |__ .
