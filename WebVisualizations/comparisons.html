@@ -33,7 +33,7 @@
             <ul class="navbar-nav ml-auto">
             
                 <!-- The plots drop down list -->
-                <li class="nav-item dropdown">
+                <li class="dropdown">
                     
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <img src="assets/bar-chart-line.svg"         
@@ -103,11 +103,16 @@
                     <div class="row ">
                                             
 
-                        <div class="col-12">
-                            <h1 class="font-weight-light text-lg-left mt-4 mb-0">
-                                <strong>Visualisations</strong>
-                            </h1>
-                            <br>
+                        <div class="col-12" id="compare_header">
+                            <span>
+                                <img src="assets/binoculars-fill.svg"         
+                                     alt="" 
+                                     width="40" height="40"
+                                     class="float-left">
+                            </span>
+                            <span >
+                                <h1><strong>&nbsp;Visualisations</strong><h1>
+                            </span> 
                         </div>
 
                         <div class="col-12">
@@ -123,7 +128,7 @@
                                 <img src="visualizations/temp_scatter.png" class="card-img-top" alt="Temperature Scatter">
                                 <div class="card-body">
                                     <h5 class="card-title">Latitude vs temperature</h5>
-                                    <p class="card-text">Do temperatures increase as you approach the equator?</p>                    
+                                    <p class="card-text">Scatter plot of temperaure and latitude for each city in the data set, plottled using Python Matplotlib</p>                    
                                 </div>
                             </a>
                         </div>
@@ -133,7 +138,7 @@
                                 <img src="visualizations/humidity_scatter.png" class="card-img-top" alt="Humidity Scatter">
                                 <div class="card-body">
                                     <h5 class="card-title">Latitude vs humidity</h5>
-                                    <p class="card-text">Does humidity increase as you approach the equator?</p>
+                                    <p class="card-text">Scatter plot of humidity and latitude for each city in the data set, plottled using Python Matplotlib</p>
                                 </div>
                             </a>
                         </div>
@@ -143,56 +148,56 @@
                                 <img src="visualizations/cloudiness_scatter.png" class="card-img-top" alt="Cloudiness Scatter">
                                 <div class="card-body">
                                     <h5 class="card-title">Latitude vs cloudiness</h5>
-                                    <p class="card-text">What is the influence of latitude on the % of cloud cover?</p>
+                                    <p class="card-text">Scatter plot of cloudiness (%) and latitude for each city in the data set, plottled using Python Matplotlib</p>
                                 </div>
                             </a>
                         </div>
 
-                        <div class="card col-md-5 col-sm-10 shadow" >
+                        <div class="card col-md-5 col-sm-10 shadow compare_cards" >
                             <a class="card-block stretched-link text-decoration-none compare_cards" href="windspeed.html">
                                 <img src="visualizations/wind_scatter.png" class="card-img-top" alt="Winsdpeed Scatter">
                                 <div class="card-body">
                                     <h5 class="card-title">Latitude vs Wind Speed</h5>
-                                    <p class="card-text">Does latitude affect wind speed?</p>
+                                    <p class="card-text">Scatter plot of wind speed and latitude for each city in the data set, plottled using Python Matplotlib</p>
                                 </div>
                             </a>
                         </div>
                         <div class="card col-md-5 col-sm-10 shadow compare_cards">
-                            <a class="card-block stretched-link text-decoration-none compare_cards" href="temperature.html">
+                            <a class="card-block stretched-link text-decoration-none compare_cards" href="temp_heatmap.html">
                                 <img src="visualizations/world_temps.png" class="card-img-top" alt="Temperature Heatmap">
                                 <div class="card-body">
                                     <h5 class="card-title">Temperature Heatmap</h5>
-                                    <p class="card-text">Do temperatures increase as you approach the equator?</p>                    
+                                    <p class="card-text">Heatmap showing the relative distribution and intensity of temperatures for cities in the dataset. Created with Python Plotly library</p>                    
                                 </div>
                             </a>
                         </div>
 
                         <div class="card col-md-5 col-sm-10 shadow compare_cards" >
-                            <a class="card-block stretched-link text-decoration-none compare_cards" href="humidity.html">                            
+                            <a class="card-block stretched-link text-decoration-none compare_cards" href="humidity_heatmap.html">                            
                                 <img src="visualizations/world_humidity.png" class="card-img-top" alt="Humidity Heatmap">
                                 <div class="card-body">
                                     <h5 class="card-title">Humidity Heatmap</h5>
-                                    <p class="card-text">Does humidity increase as you approach the equator?</p>
+                                    <p class="card-text">Heatmap showing the relative distribution and intensity of humidity for cities in the dataset. Created with Python Plotly library</p>
                                 </div>
                             </a>
                         </div>
 
                         <div class="card col-md-5 col-sm-10 shadow compare_cards" >
-                            <a class="card-block stretched-link text-decoration-none compare_cards" href="cloudiness.html">
+                            <a class="card-block stretched-link text-decoration-none compare_cards" href="cloudiness_heatmap.html">
                                 <img src="visualizations/world_cloudiness.png" class="card-img-top" alt="Cloudiness Heatmap">
                                 <div class="card-body">
                                     <h5 class="card-title">Cloudiness Heatmap</h5>
-                                    <p class="card-text">What is the influence of latitude on the % of cloud cover?</p>
+                                    <p class="card-text">Heatmap showing the relative distribution and intensity of cloudiness (%) for cities in the dataset. Created with Python Plotly library</p>
                                 </div>
                             </a>
                         </div>
 
-                        <div class="card col-md-5 col-sm-10 shadow" >
-                            <a class="card-block stretched-link text-decoration-none compare_cards" href="windspeed.html">
+                        <div class="card col-md-5 col-sm-10 shadow compare_cards" >
+                            <a class="card-block stretched-link text-decoration-none compare_cards" href="windspeed_heatmap.html">
                                 <img src="visualizations/world_wind.png" class="card-img-top" alt="Winsdpeed Heatmap">
                                 <div class="card-body">
-                                    <h5 class="card-title">Winsdpeed Heatmap"</h5>
-                                    <p class="card-text">Does latitude affect wind speed?</p>
+                                    <h5 class="card-title">Winsdpeed Heatmap</h5>
+                                    <p class="card-text">Heatmap showing the relative distribution and intensity of wind speed for cities in the dataset. Created with Python Plotly library</p>
                                 </div>
                             </a>
                         </div>

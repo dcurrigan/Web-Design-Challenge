@@ -77,6 +77,10 @@ h1 {
 
 }
 
+.main-text {
+    padding-top: 304px;
+}
+
 /* --SIDE BOX STYLES-- */
 
 #side_box {
@@ -136,7 +140,13 @@ h5 {
     margin-bottom: 0px;
 }
 
+.compare_cards {
+    margin-bottom: 15px;
+}
 
+#compare_header {
+    margin-top: 40px;
+}
 
 /* CARD BUTTON STYLES */
 .btn {

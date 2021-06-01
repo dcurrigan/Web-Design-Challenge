@@ -102,37 +102,22 @@
             
                 <!-- Header text -->
                 <h1 class="font-weight-light text-lg-left mt-4 mb-4">
-                    <strong>Latitude vs Wind Speed</strong>
+                    <strong>Humidity Heatmap</strong>
                 </h1>
                 <hr class="mt-3 mb-5">
                 
                 <!-- Homepage image and link -->
-                <img src="visualizations/wind_scatter.png" 
+                <img src="visualizations/world_humidity.png" 
                      class="float-md-left shadow" 
-                     alt="Wind Speed vs Latitude Scatter Plot"
+                     alt="Humidity Heatmap"
                      id="home_img">
                                                      
                 <!-- Homepage text -->
                 <br>
                 <p class="main_text text-left">
-                    The Wind speed scatter plot shows that a broad range of values are present at all latitudes, and wind speed does not appear to change with changing latitude.
+                    A humidity of temperatures has been generated with the Python library Plotly. This plot utilises the latitude and longitude data for each city in the data set with the intensity plotted with respect to humidity. 
+                    The allows for the distribution and intensity of measurements to be appreciated.  
                 </p>
-
-                <img src="visualizations/wind_northern_reg.png" 
-                class="float-md-left shadow" 
-                alt="Wind Speed regression north"
-                id="home_img">
-                
-                <p class="main_text text-left">
-                    This is confirmed by the Pearson's correlation coefficients for the southern and northern hemispheres which were very low at 0.054 and 0.088 respeciviely 
-                </p>
-                
-                <img src="visualizations/wind_southern_reg.png" 
-                class="float-md-left shadow" 
-                alt="Wind Speed regression south"
-                id="home_img">
-
-
                 
             </div>
         
@@ -165,47 +150,47 @@
 
                     
                         <div class="card col-xl-5 col-lg-10 shadow" style="width: 14rem;">
-                            <img src="visualizations/temp_scatter.png" class="card-img-top" alt="...">
+                            <img src="visualizations/world_temps.png" class="card-img-top" alt="...">
                             <div class="card-body">
-                            <h5 class="card-title">Latitude vs temperature</h5>
-                            <p class="card-text">Do temperatures increase as you approach the equator?</p>
+                            <h5 class="card-title">Temperature heatmap</h5>
+                            <p class="card-text">The distribution and intensity of temperature data</p>
                             
                             </div>
                             <div class="card-footer text-center">
-                                <a href="temperature.html" class="btn btn-primary">View Plot</a>
-                            </div>
-                        </div>
-
-                        <div class="card col-xl-5 col-lg-10 shadow" style="width: 14rem;">
-                            <img src="visualizations/humidity_scatter.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                            <h5 class="card-title">Latitude vs humidity</h5>
-                            <p class="card-text">Does humidity increase as you approach the equator?</p>
-                            </div>
-                            <div class="card-footer text-center">
-                                <a href="humidity.html" class="btn btn-primary">View Plot</a>
-                            </div>
-                        </div>
-
-                        <div class="card col-xl-5 col-lg-10 shadow" style="width: 14rem;">
-                            <img src="visualizations/cloudiness_scatter.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                            <h5 class="card-title">Latitude vs cloudiness</h5>
-                            <p class="card-text">What is the influence of latitude on the % of cloud cover?</p>
-                            </div>
-                            <div class="card-footer text-center">
-                                <a href="cloudiness.html" class="btn btn-primary">View Plot</a>-
+                                <a href="temp_heatmap.html" class="btn btn-primary">View Plot</a>
                             </div>
                         </div>
 
                         <div class="card col-xl-5 col-lg-10 shadow selected_card" style="width: 14rem;">
-                            <img src="visualizations/wind_scatter.png" class="card-img-top" alt="...">
+                            <img src="visualizations/world_humidity.png" class="card-img-top" alt="...">
                             <div class="card-body">
-                            <h5 class="card-title">Latitude vs Wind Speed</h5>
-                            <p class="card-text">Does latitude affect wind speed?</p>
+                            <h5 class="card-title">Humidity heatmap</h5>
+                            <p class="card-text">The distribution and intensity of humidity data</p>
                             </div>
                             <div class="card-footer text-center">
-                                <a href="windspeed.html" class="btn btn-primary">View Plot</a>
+                                <a href="humidity_heatmap.html" class="btn btn-primary">View Plot</a>
+                            </div>
+                        </div>
+
+                        <div class="card col-xl-5 col-lg-10 shadow" style="width: 14rem;">
+                            <img src="visualizations/world_cloudiness.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                            <h5 class="card-title">Cloudiness heatmap</h5>
+                            <p class="card-text">The distribution and intensity of cloudiness data</p>
+                            </div>
+                            <div class="card-footer text-center">
+                                <a href="cloudiness_heatmap.html" class="btn btn-primary">View Plot</a>-
+                            </div>
+                        </div>
+
+                        <div class="card col-xl-5 col-lg-10 shadow" style="width: 14rem;">
+                            <img src="visualizations/world_wind.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                            <h5 class="card-title">Wind Speed heatmap</h5>
+                            <p class="card-text">The distribution and intensity of wind speed data</p>
+                            </div>
+                            <div class="card-footer text-center">
+                                <a href="windspeed_heatmap.html" class="btn btn-primary">View Plot</a>
                             </div>
                         </div>
 
