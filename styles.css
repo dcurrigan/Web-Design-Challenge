@@ -35,10 +35,13 @@
     padding-right: 5px !important;
   }
 
-/* NAVBAR BUTTON STYLES */
+/* Colour change Navbar at smaller screen sizes */
 
-
-
+@media (max-width: 1100px) {
+    .navbar {
+       background-color: #7476b6 !important;
+    } 
+}
 
 
 
