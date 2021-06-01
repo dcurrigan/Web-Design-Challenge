@@ -34,6 +34,7 @@ Web-Design-Challenge
 |  
 |    
 |__ index.html                                      # The landging page
+|__ styles.css                                      # custom stylesheet for the site
 |__ temperature.html                                # The temperature analysis 
 |__ humidity.html                                   # The humidity analysis 
 |__ cloudiness.html                                 # The cloudiness analysis  
@@ -63,6 +64,8 @@ Web-Design-Challenge
 # Setup 
   
 * The site can be accessed via: https://dcurrigan.github.io/Web-Design-Challenge/  
+* The site utililses the Bootstrap framework as well as well as some custom css styles imported from the styles.css file
+
   
     
 # Contributors  
